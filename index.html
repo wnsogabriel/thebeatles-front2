@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,63 @@
 </head>
 
 <body>
-    <img src="assets/img/beatles-hero.png" class="img-fluid" alt="Integrantes dos Beatles">
+    <!-- Início da Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-beatles py-0">
+  <div class="container">
+    
+    <!-- 1. Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/logo-branca.png" alt="The Beatles" height="80">
+    </a>
+
+    <!-- 2. Menu Hambúrguer celular -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- 3. Lista de Links que encolhem no celular -->
+    <div class="collapse navbar-collapse" id="menuNavegacao">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="biografia.html">Biografia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="discografia.html">Discografia</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- Fim da Navbar -->
+
+<!--  Teste do CSS -->
+<h2 class="titulos">
+    BEBAS NEUE
+</h2>
+<p class="paragrafo">
+    Inter 
+</p>
+<p class="destaque">
+    Playfair Display 
+</p>
+
+<p class="paragrafo">
+    (parágrafo 1 sobre a formação da banda em Liverpool...)
+</p>
+
+<p class="destaque">
+    "Éramos apenas um bando de garotos tocando skiffle no Cavern Club."
+</p>
+
+<p class="paragrafo">
+    (parágrafo 2 continuando a história...)
+</p>
+
+<p class="paragrafo">Isso é texto normal, e <strong>isso aqui deveria ficar em negrito</strong> usando a mesma Inter.</p>
 </body>
 
 </html>
