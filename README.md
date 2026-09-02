@@ -55,7 +55,7 @@ Não precisa escrever `font-family` na mão, usa essas classes prontas:
 
 Exemplo:
 ```html
-<h1 class="titulos">Biografia</h1>
+<h1 class="titulo">Biografia</h1>
 <p class="paragrafo">Texto normal aqui...</p>
 <p class="destaque">"Uma frase marcante aqui."</p>
 ```

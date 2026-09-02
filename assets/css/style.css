@@ -10,6 +10,9 @@ body {
     background-color: var(--branco);
     color: var(--preto);
     font-family: var(--fonte-paragrafos);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
@@ -57,7 +60,7 @@ body {
     font-style: italic;
 }
 
-.titulos {
+.titulo {
     font-family: var(--fonte-titulos);
     font-size: 4rem;
     line-height: 1.5;
@@ -91,4 +94,10 @@ section{
 .footer-beatles{
     background-color: var(--preto);
     color: var(--branco);
+    margin-top: auto;
+    padding: 1.5rem;
+}
+
+.logo-footer{
+    height: 5rem;
 }
