@@ -44,6 +44,7 @@ body {
     --preto: #1A1A1A;
     --cinza: #6E6E6E;
     --vermelho: #C1121F;
+    --vermelho-bold: #A40F1A;
     --fonte-titulos: 'BEBAS NEUE', sans-serif;
     --fonte-paragrafos: 'Inter', sans-serif;
     --fonte-destaque: 'Playfair Display', serif;
@@ -71,4 +72,23 @@ body {
 
 .navbar-beatles {
     background-color: var(--preto);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--vermelho);
+    --bs-btn-border-color: var(--vermelho-bold);
+    --bs-btn-hover-bg: var(--vermelho-bold);
+    --bs-btn-hover-border-color: var(--vermelho-bold);
+    --bs-btn-active-bg: var(--vermelho);
+    --bs-btn-active-border-color: var(--vermelho-bold);
+}
+
+section{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.footer-beatles{
+    background-color: var(--preto);
+    color: var(--branco);
 }
