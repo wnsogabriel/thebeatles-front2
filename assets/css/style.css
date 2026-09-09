@@ -119,3 +119,23 @@ section{
     margin: 0;
     padding: 0;
 }
+
+.card-home {
+    margin: 2rem;
+    padding: 2rem;
+    width: 60%;
+}
+
+.num-home {
+    font-family: var(--fonte-titulos);
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: -1.5rem;
+}
+
+.pa-home {
+    font-family: var(--fonte-paragrafos);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
