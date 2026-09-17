@@ -143,3 +143,18 @@ section{
 .text-justificado {
     text-align: justify;
 }
+
+/* ADICIONADO POR JADERSON ANDRADE
+Faz a imagem grudar na esquerda e o texto rodear ela */
+.img-jornal {
+    float: left;
+    width: 40%;          
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+/* ADICIONADO POR JADERSON ANDRADE
+Justifica o texto para dar cara de jornal impresso, alinhado tanto na esquerda quanto na direita */
+.secao-jornal p {
+    text-align: justify;
+}
