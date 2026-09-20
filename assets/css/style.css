@@ -110,7 +110,6 @@ section {
 
 .footer-beatles p {
   margin-bottom: 0;
-  margin-top: 1.2rem;
 }
 
 .hero {
@@ -168,4 +167,25 @@ Faz as imagens do carrosel ficarem com tamanho padrão */
 #carrosselGeorge img {
   height: 80%;
   object-fit: cover;
+}
+
+.passada {
+  transition: transform 0.3s ease;
+}
+
+.passada:hover {
+  transform: translateY(-5px);
+}
+
+.hoverzada {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hoverzada:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15) !important;
+}
+
+.faixa-preta {
+  background-color: var(--preto);
 }
