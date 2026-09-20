@@ -1,69 +1,370 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beatles - John Lennon</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/favicon.png">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/favicon.png" />
+  </head>
 
-<body>
+  <body>
     <!-- Início da Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-beatles sticky-top py-0">
-        <div class="container">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-beatles sticky-top py-0"
+    >
+      <div class="container">
+        <!-- 1. Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo-branca.png" alt="The Beatles" height="80" />
+        </a>
 
-            <!-- 1. Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo-branca.png" alt="The Beatles" height="80">
-            </a>
+        <!-- 2. Menu Hambúrguer celular -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- 2. Menu Hambúrguer celular -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- 3. Lista de Links que encolhem no celular -->
-            <div class="collapse navbar-collapse" id="menuNavegacao">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="biografia.html">Biografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="discografia.html">Discografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="curiosidades.html">Curiosidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="legado.html">Legado</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="timeline.html">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                </ul>
-            </div>
-
+        <!-- 3. Lista de Links que encolhem no celular -->
+        <div class="collapse navbar-collapse" id="menuNavegacao">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="biografia.html">Biografia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discografia.html">Discografia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="legado.html">Legado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="timeline.html">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Fim da Navbar -->
 
-<!-- Não apaga isso -->
-   <section aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="biografia.html">Biografia</a></li>
-    <li class="breadcrumb-item active" aria-current="page">John Lennon</li>
-  </ol>
-</section>
-<!-- Começa o código a partir daqui -->
+    <!-- Não apaga isso -->
+    <section aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="biografia.html">Biografia</a></li>
+            <li class="breadcrumb-item active" aria-current="page">John Lennon</li>
+        </ol>
+
+    </section>
+    <!-- Começa o código a partir daqui -->
+
+    <section>
+        
+        <!-- Introdução -->
+
+        <h1 class="titulo">
+            Quem foi John Lennon?
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            John Winston Ono Lennon nasceu em 9 de outubro de 1940,
+            em Liverpool, na Inglaterra. Foi cantor, compositor,
+            guitarrista e um dos principais integrantes dos Beatles.
+            Ao lado de Paul McCartney, formou uma das parcerias de
+            composição mais importantes da história da música popular.
+
+            <br><br>
+
+            Lennon ficou conhecido não apenas por sua participação nos
+            Beatles, mas também por sua personalidade marcante, suas
+            ideias sobre paz e seus trabalhos como artista solo. Sua
+            carreira passou por diferentes fases, acompanhando também
+            as grandes mudanças culturais que aconteceram durante as
+            décadas de 1960 e 1970.
+
+        </p>
+
+
+        <!-- Infância -->
+
+        <h1 class="titulo mt-5">
+            Infância e início na música
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            Durante sua juventude em Liverpool, John Lennon desenvolveu
+            grande interesse pela música e começou a tocar guitarra.
+            Em 1957, formou o grupo The Quarrymen, uma banda de
+            skiffle e rock que reunia jovens músicos da região.
+
+            <br><br>
+
+            Foi nesse período que Lennon conheceu Paul McCartney.
+            McCartney entrou para o grupo e, posteriormente, apresentou
+            George Harrison a Lennon. A amizade e a parceria musical
+            entre Lennon e McCartney cresceram rapidamente e se
+            tornaram fundamentais para a formação dos Beatles.
+
+        </p>
+
+
+        <!-- Beatles -->
+
+        <h1 class="titulo mt-5">
+            John Lennon e os Beatles
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            No início dos anos 1960, os Beatles começaram a conquistar
+            espaço na cena musical britânica. John Lennon atuava como
+            vocalista, guitarrista e compositor, dividindo com Paul
+            McCartney a principal responsabilidade pelas composições
+            da banda.
+
+            <br><br>
+
+            A parceria entre os dois produziu algumas das músicas mais
+            conhecidas do grupo. Apesar de Lennon e McCartney assinarem
+            juntos grande parte das canções, cada um desenvolveu
+            características próprias como compositor.
+
+            <br><br>
+
+            Durante a trajetória dos Beatles, Lennon participou de
+            momentos importantes da evolução musical do grupo. A banda
+            passou de músicas mais simples e voltadas para o pop e o
+            rock para trabalhos que apresentavam novas técnicas de
+            gravação, diferentes instrumentos e influências culturais.
+
+        </p>
+
+
+        <!-- Mudança musical -->
+
+        <h1 class="titulo mt-5">
+            Mudança artística
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            Com o passar dos anos, John Lennon passou a explorar temas
+            mais pessoais e sociais em suas músicas. Os Beatles também
+            começaram a experimentar diferentes estilos e formas de
+            produção em estúdio.
+
+            <br><br>
+
+            Álbuns como <strong>Rubber Soul</strong>,
+            <strong>Revolver</strong>,
+            <strong>Sgt. Pepper's Lonely Hearts Club Band</strong> e
+            <strong>The Beatles</strong> mostram diferentes momentos
+            dessa transformação artística.
+
+            <br><br>
+
+            Lennon também demonstrou interesse por diferentes culturas,
+            filosofia e espiritualidade. Essas influências apareceram
+            em algumas de suas composições e ajudaram a formar sua
+            identidade artística.
+
+        </p>
+
+
+        <!-- Carreira solo -->
+
+        <h1 class="titulo mt-5">
+            Carreira solo
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            Após o fim dos Beatles em 1970, John Lennon iniciou uma
+            importante carreira solo. Ao lado de Yoko Ono, com quem
+            desenvolveu diversos projetos artísticos e musicais,
+            Lennon lançou vários trabalhos.
+
+            <br><br>
+
+            Entre suas músicas solo mais conhecidas estão
+            <strong>Imagine</strong>, <strong>Jealous Guy</strong> e
+            <strong>Give Peace a Chance</strong>.
+
+            <br><br>
+
+            <strong>Imagine</strong>, lançada em 1971, tornou-se uma
+            das músicas mais conhecidas de sua carreira. A canção
+            apresenta uma reflexão sobre paz, sociedade e a possibilidade
+            de um mundo sem conflitos.
+
+        </p>
+
+
+        <!-- Paz -->
+
+        <h1 class="titulo mt-5">
+            John Lennon e a busca pela paz
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            Durante o final dos anos 1960 e início dos anos 1970,
+            Lennon e Yoko Ono passaram a participar de manifestações
+            e projetos relacionados à paz.
+
+            <br><br>
+
+            Lennon utilizou sua visibilidade como artista para defender
+            publicamente ideias relacionadas à paz e se posicionar
+            contra conflitos e guerras. Essa fase tornou sua imagem
+            ainda mais associada a movimentos culturais e sociais
+            daquele período.
+
+        </p>
+
+
+        <!-- Últimos anos -->
+
+        <h1 class="titulo mt-5">
+            Últimos anos
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            No final da década de 1970, John Lennon passou por um período
+            de afastamento da vida pública para se dedicar à família.
+            Em 1980, voltou ao cenário musical com o álbum
+            <strong>Double Fantasy</strong>, lançado em parceria com
+            Yoko Ono.
+
+            <br><br>
+
+            Entretanto, sua trajetória foi interrompida tragicamente.
+            John Lennon morreu em 8 de dezembro de 1980, em Nova York,
+            aos 40 anos.
+
+        </p>
+
+
+        <!-- Legado -->
+
+        <h1 class="titulo mt-5">
+            Legado
+        </h1>
+
+        <p class="text-justificado mt-3">
+
+            Mesmo décadas após sua morte, John Lennon continua sendo
+            lembrado como uma das figuras mais importantes da história
+            da música popular. Seu trabalho com os Beatles e sua carreira
+            solo influenciaram inúmeros músicos e artistas.
+
+            <br><br>
+
+            Sua parceria com Paul McCartney ajudou a definir uma das
+            fases mais importantes da música do século XX, enquanto suas
+            obras solo mostraram uma faceta mais pessoal de sua
+            criatividade.
+
+            <br><br>
+
+            John Lennon deixou uma obra que continua sendo ouvida por
+            novas gerações. Sua contribuição como compositor, cantor e
+            artista fez com que seu nome permanecesse ligado à história
+            dos Beatles e à cultura musical mundial.
+
+        </p>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="row">
+
+            <!--Coluna da esquerda-->
+
+            <div class="col-md-4">
+                <!--Foto de cima-->
+
+                <img class="img-fluid mb-4"
+                    src="https://cdn.sanity.io/images/nz2yk7ti/production/84ce7654e6a71db4a7fb7075982d5ba27096564f-3898x2988.jpg?auto=format&w=3840&q=75"
+                    alt="Beatles na Abbey Road">
+
+                <!--Foto de baixo-->
+
+                <img class="img-fluid" src="https://s.eurozet.pl/cbz/2025/12/18/f265f1e7/139196-860x484-b0942cd955.jpg"
+                    alt="Beatles na Abbey Road">
+
+            </div>
+
+            <!--Coluna do meio-->
+
+            <div class="col-md-4">
+
+                <img class="img-fluid w-100"
+                    src="https://static.wikia.nocookie.net/dublagem/images/3/3d/John_Lennon_%28anos_80%29.png/revision/latest?cb=20260207125155&path-prefix=pt-br"
+                    alt="Retrato dos Beatles">
+            </div>
+
+            <!--Coluna de baixo-->
+
+            <div class="col-md-4">
+                <!--Foto de cima-->
+                <img class="img-fluid w-100 mt-5 mb-5"
+                    src="https://rollingstone.com.br/wp-content/uploads/john_lennon_-_ap_photo.jpg"
+                    alt="Beatles no topo do predio">
+
+                <!--Foto de baixo-->
+                <img class="img-fluid w-100 mt-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQta7llL4cnoGsWfWAQ0tSVnX1hX8GNV6vOxLy8g_jn338rqpRpsclmtc_0&s=10"
+                    alt="Beatles no topo do predio">
+
+            </div>
+        </div>
+        <a class="link-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover icon-link icon-link-hover link-offset-1 mt-3"
+            href="galeria.html">
+            Ver mais fotos
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                <path
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+        </a>
+        </div>
+
+        <div>
+            <!-- =============================== -->
+            <!-- BOTÃO VOLTAR -->
+            <!-- =============================== -->
+
+            <section class="text-center">
+
+                <a href="biografia.html" class="btn btn-dark">
+
+                    Voltar para Biografia
+
+                </a>
+        </div>
+    </section>
+
+
 
 
     <!-- Início do Footer -->
@@ -76,7 +377,8 @@
                 </div>
                 <div class="col-md-5">
                     <p><b>Trabalho de Front-end 2</b> - Banda<br>Desenvolvido por Enzo Gabriel, Arthur Ribeiro, Gabriel
-                        Carrajola, Matheus Bonatti, Levi Lara e Jaderson.<br>Todos os direitos reservados © 2026 - The Beatles</p>
+                        Carrajola, Matheus Bonatti, Levi Lara e Jaderson.<br>Todos os direitos reservados © 2026 - The
+                        Beatles</p>
                 </div>
                 <!-- Primeira fileira de links -->
                 <div class="col-md-5">
@@ -118,11 +420,78 @@
                         </div>
                     </div>
                 </div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="biografia.html">Biografia</a></li>
+        <li class="breadcrumb-item active" aria-current="page">John Lennon</li>
+      </ol>
+    </section>
+    <!-- Começa o código a partir daqui -->
+
+    <!-- Início do Footer -->
+    <footer class="footer-beatles">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2">
+            <img
+              class="img-fluid logo-footer"
+              src="assets/img/beatles-footer-logo-branco.png"
+              alt="Logo Beatles Abbey Road"
+            />
+          </div>
+          <div class="col-md-5">
+            <p>
+              <b>Trabalho de Front-end 2</b> - Banda<br />Desenvolvido por Enzo
+              Gabriel, Arthur Ribeiro, Gabriel Carrajola, Matheus Bonatti, Levi
+              Lara e Jaderson Andrade.<br />Todos os direitos reservados © 2026
+              - The Beatles
+            </p>
+          </div>
+          <!-- Primeira fileira de links -->
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="biografia.html">Biografia</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Segunda fileira de links -->
+              <div class="col-md-4">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Discografia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="curiosidades.html"
+                      >Curiosidades</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Terceira fileira de links -->
+              <div class="col-md-4">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a class="nav-link" href="legado.html">Legado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="timeline.html">Timeline</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- Fim do Footer -->
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
