@@ -85,8 +85,8 @@ body {
 }
 
 section {
-  margin: 2rem;
-  padding: 2rem;
+  margin: 0.5rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .footer-beatles {
@@ -188,4 +188,8 @@ Faz as imagens do carrosel ficarem com tamanho padrão */
 
 .faixa-preta {
   background-color: var(--preto);
+}
+
+.preto-e-branco {
+  filter: grayscale(100%);
 }
