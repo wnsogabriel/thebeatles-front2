@@ -198,114 +198,117 @@
         musical inegociável — o eterno "Beatle quieto" cuja voz e cujas cordas
         continuam a ressoar nas entrelinhas da história moderna.
       </p>
-    </section>
 
-    <!-- Seção de Carrossel de Fotos Adicionais -->
-    <div class="container my-5">
-      <h3 class="destaque">Mais Momentos de George Harrison</h3>
+      <!-- Seção de Carrossel de Fotos Adicionais -->
+      <div class="container-carrossel">
+        <h3 class="destaque">Mais momentos de George Harrison</h3>
+        <div
+          id="carrosselGeorge"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carrosselGeorge"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carrosselGeorge"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carrosselGeorge"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
 
-      <div id="carrosselGeorge" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carrosselGeorge"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carrosselGeorge"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carrosselGeorge"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-
-        <!-- Itens do Carrossel (3 imagens visíveis por vez usando grid do Bootstrap) -->
-        <div class="carousel-inner">
-          <!-- Grupo 1 (Primeiras 3 fotos) -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Harrison-Citar.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 1"
-                />
+          <!-- Itens do Carrossel (3 imagens visíveis por vez usando grid do Bootstrap) -->
+          <div class="carousel-inner">
+            <!-- Grupo 1 (Primeiras 3 fotos) -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Harrison-Citar.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 1"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Harrison-Colored.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 2"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Harrison-Adult.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 3"
+                  />
+                </div>
               </div>
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Harrison-Colored.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 2"
-                />
-              </div>
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Harrison-Adult.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 3"
-                />
+            </div>
+
+            <!-- Grupo 2 (Próximas 3 fotos - totalizando 6) -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Garrison-Young.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 4"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Harrison-Lifetime.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 5"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="./assets/img/George-Harrison-old.jpg"
+                    class="d-block w-100 img-fluid rounded shadow"
+                    alt="George Harrison 6"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Grupo 2 (Próximas 3 fotos - totalizando 6) -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Garrison-Young.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 4"
-                />
-              </div>
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Harrison-Lifetime.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 5"
-                />
-              </div>
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/George-Harrison-old.jpg"
-                  class="d-block w-100 img-fluid rounded shadow"
-                  alt="George Harrison 6"
-                />
-              </div>
-            </div>
-          </div>
+          <!-- Botões de Navegação (Avançar e Voltar) -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrosselGeorge"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrosselGeorge"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
-
-        <!-- Botões de Navegação (Avançar e Voltar) -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carrosselGeorge"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carrosselGeorge"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
       </div>
-    </div>
+    </section>
 
     <!-- Início do Footer -->
     <footer class="footer-beatles">

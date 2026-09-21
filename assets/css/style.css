@@ -143,7 +143,7 @@ section {
 }
 
 /* ADICIONADO POR JADERSON ANDRADE
-Faz a imagem grudar na esquerda e o texto rodear ela */
+Padroniza o tamanho da imagem em relação a tela e o texto rodear ela */
 .img-jornal {
   float: left;
   width: 50%;
@@ -157,15 +157,38 @@ Justifica o texto para dar cara de jornal impresso, alinhado tanto na esquerda q
   text-align: justify;
 }
 
-/* ADICIONADO POR JADERSON ANDRADE
-Alarga o carrossel para preencher as laterais ao invés de espaços em branco */
-.container:has(#carrosselGeorge) {
-  max-width: 95% !important; /* Aumenta a largura para ocupar quase a tela toda, preenchendo as laterais */
+/*ADICIONADO POR JADERSON ANDRADE
+Distância do Carrossel G. Harrison para o texto */
+.container-carrossel {
+  margin-top: 80px;
 }
 
 /*ADICIONADO POR JADERSON ANDRADE
-Faz as imagens do carrosel ficarem com tamanho padrão */
+Faz as imagens do carrossel ficarem com tamanho padrão */
 #carrosselGeorge img {
   height: 80%;
   object-fit: cover;
+}
+
+/* ADICIONADO POR JADERSON ANDRADE
+Padroniza o tamanho da imagem em relação a tela e o texto rodear ela */
+.container-carrossel-dois {
+  float: left;
+  width: 50%;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+/*ADICIONADO POR JADERSON ANDRADE
+Faz as imagens do carrossel ficarem com tamanho padrão */
+#carrosselLegado .carousel-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;  
+}
+
+/*ADICIONADO POR JADERSON ANDRADE
+Espaçamento do texto para o video */
+.bt-legado {
+  margin-top: 100px;
 }
