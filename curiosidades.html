@@ -56,133 +56,136 @@
     </nav>
     <!-- Fim da Navbar -->
 
-
-    <!--Card de introdução das curiosidades-->
-    <section class="card">
-        <div class="card-body">
-            <h1 class="titulo">Curiosidades</h1>
-            <p class="card-text">Além da música, os Beatles deixaram histórias curiosas ao longo da carreira. Clique
-                em cada pergunta abaixo para saber mais.
-            </p>
-        </div>
-    </section>
-    <!--Fim do card de introdução-->
-
-    <!--Card com o acordeão de curiosidades-->
-    <section class="card">
-        <div class="card-body">
-            <div class="accordion" id="acordeaoCuriosidades">
-
-                <!--Curiosidade 1-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade1">
-                            De onde veio o nome "The Beatles"?
-                        </button>
-                    </h2>
-                    <div id="curiosidade1" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">Antes de se chamar The Beatles, o grupo passou por nomes como The
-                            Quarrymen e Johnny and the Moondogs. O nome definitivo foi uma brincadeira com a palavra
-                            "beetles" (besouros, em inglês) e "beat", em referência ao ritmo musical.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 2-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade2">
-                            Ringo Starr sempre foi o baterista da banda?
-                        </button>
-                    </h2>
-                    <div id="curiosidade2" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">Não. Antes de Ringo entrar para a banda em 1962, quem tocava
-                            bateria era Pete Best. A troca aconteceu pouco antes do grande sucesso internacional do
-                            grupo.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 3-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade3">
-                            Onde a maior parte dos discos foi gravada?
-                        </button>
-                    </h2>
-                    <div id="curiosidade3" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">Praticamente toda a discografia foi gravada nos estúdios da EMI,
-                            em Londres, que hoje são conhecidos como Abbey Road Studios — nome que se tornou também o
-                            título do penúltimo álbum da banda.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 4-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade4">
-                            Qual foi a última apresentação ao vivo da banda?
-                        </button>
-                    </h2>
-                    <div id="curiosidade4" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">Em janeiro de 1969, os Beatles fizeram uma apresentação surpresa
-                            no telhado do prédio da Apple Corps, em Londres. Foi a última vez que os quatro tocaram
-                            juntos ao vivo em público.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 5-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade5">
-                            Por que a foto da faixa de pedestres é tão famosa?
-                        </button>
-                    </h2>
-                    <div id="curiosidade5" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">A capa do álbum Abbey Road, com os quatro atravessando a faixa de
-                            pedestres em frente ao estúdio, se tornou um dos retratos mais reproduzidos da história da
-                            música e ainda hoje atrai turistas para o local, em Londres.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 6-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade6">
-                            George Harrison influenciou a música ocidental de que forma?
-                        </button>
-                    </h2>
-                    <div id="curiosidade6" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">George Harrison foi um dos responsáveis por popularizar o sitar,
-                            instrumento indiano, no pop ocidental, usando-o pela primeira vez na faixa "Norwegian
-                            Wood", do álbum Rubber Soul.</div>
-                    </div>
-                </div>
-
-                <!--Curiosidade 7-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#curiosidade7">
-                            Os Beatles receberam algum reconhecimento oficial?
-                        </button>
-                    </h2>
-                    <div id="curiosidade7" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
-                        <div class="accordion-body">Em 1988, a banda foi introduzida no Rock and Roll Hall of Fame, e
-                            ao longo da carreira também acumulou diversos prêmios Grammy, tanto em conjunto quanto em
-                            carreiras solo posteriores.</div>
-                    </div>
-                </div>
-
+    <main class="container my-5">
+        <!-- Cabeçalho centralizado -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-10">
+                <h1 class="display-4 fw-bold">Curiosidades</h1>
+                <p class="lead text-muted">
+                    Além da música, os Beatles deixaram histórias curiosas ao longo da carreira. Clique
+                    em cada pergunta abaixo para saber mais.
+                </p>
             </div>
         </div>
-    </section>
-    <!--Fim do card com o acordeão de curiosidades-->
 
+        <!-- Acordeão envelopado com sombra e centralizado -->
+        <section class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <div class="accordion" id="acordeaoCuriosidades">
+
+                            <!--Curiosidade 1-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade1">
+                                        De onde veio o nome "The Beatles"?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade1" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">Antes de se chamar The Beatles, o grupo passou por nomes como The
+                                        Quarrymen e Johnny and the Moondogs. O nome definitivo foi uma brincadeira com a palavra
+                                        "beetles" (besouros, em inglês) e "beat", em referência ao ritmo musical.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 2-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade2">
+                                        Ringo Starr sempre foi o baterista da banda?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade2" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">Não. Antes de Ringo entrar para a banda em 1962, quem tocava
+                                        bateria era Pete Best. A troca aconteceu pouco antes do grande sucesso internacional do
+                                        grupo.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 3-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade3">
+                                        Onde a maior parte dos discos foi gravada?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade3" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">Praticamente toda a discografia foi gravada nos estúdios da EMI,
+                                        em Londres, que hoje são conhecidos como Abbey Road Studios — nome que se tornou também o
+                                        título do penúltimo álbum da banda.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 4-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade4">
+                                        Qual foi a última apresentação ao vivo da banda?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade4" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">Em janeiro de 1969, os Beatles fizeram uma apresentação surpresa
+                                        no telhado do prédio da Apple Corps, em Londres. Foi a última vez que os quatro tocaram
+                                        juntos ao vivo em público.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 5-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade5">
+                                        Por que a foto da faixa de pedestres é tão famosa?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade5" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">A capa do álbum Abbey Road, com os quatro atravessando a faixa de
+                                        pedestres em frente ao estúdio, se tornou um dos retratos mais reproduzidos da história da
+                                        música e ainda hoje atrai turistas para o local, em Londres.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 6-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade6">
+                                        George Harrison influenciou a música ocidental de que forma?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade6" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">George Harrison foi um dos responsáveis por popularizar o sitar,
+                                        instrumento indiano, no pop ocidental, usando-o pela primeira vez na faixa "Norwegian
+                                        Wood", do álbum Rubber Soul.</div>
+                                </div>
+                            </div>
+
+                            <!--Curiosidade 7-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#curiosidade7">
+                                        Os Beatles receberam algum reconhecimento oficial?
+                                    </button>
+                                </h2>
+                                <div id="curiosidade7" class="accordion-collapse collapse" data-bs-parent="#acordeaoCuriosidades">
+                                    <div class="accordion-body">Em 1988, a banda foi introduzida no Rock and Roll Hall of Fame, e
+                                        ao longo da carreira também acumulou diversos prêmios Grammy, tanto em conjunto quanto em
+                                        carreiras solo posteriores.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Início do Footer -->
     <footer class="footer-beatles">
@@ -194,7 +197,8 @@
                 </div>
                 <div class="col-md-5">
                     <p><b>Trabalho de Front-end 2</b> - Banda<br>Desenvolvido por Enzo Gabriel, Arthur Ribeiro, Gabriel
-                        Carrajola, Matheus Bonatti, Levi Lara e Jaderson.<br>Todos os direitos reservados © 2026 - The Beatles</p>
+                        Carrajola, Matheus Bonatti, Levi Lara e Jaderson.<br>Todos os direitos reservados © 2026 - The
+                        Beatles</p>
                 </div>
                 <!-- Primeira fileira de links -->
                 <div class="col-md-5">
