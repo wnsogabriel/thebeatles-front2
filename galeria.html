@@ -1,378 +1,288 @@
 <!doctype html>
 
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-```
-<title>The Beatles - Galeria</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beatles - Galeria</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-/>
+<body>
 
-<link rel="stylesheet" href="assets/css/style.css" />
-<link rel="icon" href="assets/img/favicon.png" />
+  <!-- Início da Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-beatles sticky-top py-0">
+    <div class="container">
 
-<style>
-  .galeria-fotos {
-    margin-top: 40px;
-    margin-bottom: 60px;
-  }
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo-branca.png" alt="The Beatles" height="80" />
+      </a>
 
-  .foto-galeria {
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+      <!-- Menu Hambúrguer celular -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  .foto-galeria img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-  }
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="menuNavegacao">
+        <ul class="navbar-nav ms-auto">
 
-  .foto-galeria:hover img {
-    transform: scale(1.08);
-  }
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Início
+            </a>
+          </li>
 
-  .titulo-galeria {
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 10px;
-  }
+          <li class="nav-item">
+            <a class="nav-link" href="biografia.html">
+              Biografia
+            </a>
+          </li>
 
-  .subtitulo-galeria {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #666;
-  }
-</style>
-```
+          <li class="nav-item">
+            <a class="nav-link" href="discografia.html">
+              Discografia
+            </a>
+          </li>
 
-  </head>
+          <li class="nav-item">
+            <a class="nav-link" href="curiosidades.html">
+              Curiosidades
+            </a>
+          </li>
 
-  <body>
+          <li class="nav-item">
+            <a class="nav-link" href="legado.html">
+              Legado
+            </a>
+          </li>
 
-```
-<!-- Início da Navbar -->
-<nav
-  class="navbar navbar-expand-lg navbar-dark navbar-beatles sticky-top py-0"
->
-  <div class="container">
+          <li class="nav-item">
+            <a class="nav-link" href="timeline.html">
+              Timeline
+            </a>
+          </li>
 
-    <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img
-        src="assets/img/logo-branca.png"
-        alt="The Beatles"
-        height="80"
-      />
-    </a>
+          <li class="nav-item">
+            <a class="nav-link active" href="galeria.html">
+              Galeria
+            </a>
+          </li>
 
-    <!-- Menu Hambúrguer celular -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#menuNavegacao"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="menuNavegacao">
-      <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">
-            Início
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="biografia.html">
-            Biografia
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="discografia.html">
-            Discografia
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="curiosidades.html">
-            Curiosidades
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="legado.html">
-            Legado
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="timeline.html">
-            Timeline
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="galeria.html">
-            Galeria
-          </a>
-        </li>
-
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Fim da Navbar -->
-
-
-<!-- Título da Galeria -->
-<main class="container">
-
-  <div class="titulo-galeria">
-    <h1 class="titulo">
-      Galeria dos Beatles
-    </h1>
-
-    <p class="subtitulo-galeria">
-      Momentos marcantes da história da maior banda de todos os tempos.
-    </p>
-  </div>
+  <!-- Fim da Navbar -->
 
 
-  <!-- Galeria -->
-  <section class="galeria-fotos">
+  <!-- Título da Galeria -->
+  <main class="container">
 
-    <div class="row">
+    <div class="titulo-galeria">
+      <h1 class="display-4 fw-bold">
+        Galeria dos Beatles
+      </h1>
 
-      <!-- Foto 1 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria1.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 2 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria2.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 3 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria3.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-
-      <!-- Foto 4 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria4.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 5 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria5.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 6 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria6.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-
-      <!-- Foto 7 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria7.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 8 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria8.jpeg"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
-      <!-- Foto 9 -->
-      <div class="col-md-4">
-        <div class="foto-galeria">
-          <img
-            src="assets/img/galeria9.webp"
-            alt="The Beatles"
-          />
-        </div>
-      </div>
-
+      <p class="subtitulo-galeria">
+        Momentos marcantes da história da maior banda de todos os tempos.
+      </p>
     </div>
 
-  </section>
 
-</main>
+    <!-- Galeria -->
+    <section class="galeria-fotos">
+
+      <div class="row">
+
+        <!-- Foto 1 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria1.jpeg" alt="The Beatles" />
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria2.jpeg" alt="The Beatles" />
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria3.jpeg" alt="The Beatles" />
+          </div>
+        </div>
 
 
-<!-- Início do Footer -->
-<footer class="footer-beatles">
+        <!-- Foto 4 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria4.jpeg" alt="The Beatles" />
+          </div>
+        </div>
 
-  <div class="container">
+        <!-- Foto 5 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria5.jpeg" alt="The Beatles" />
+          </div>
+        </div>
 
-    <div class="row align-items-center">
+        <!-- Foto 6 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria6.jpeg" alt="The Beatles" />
+          </div>
+        </div>
 
-      <div class="col-md-2">
 
-        <img
-          class="img-fluid logo-footer"
-          src="assets/img/beatles-footer-logo-branco.png"
-          alt="Logo Beatles Abbey Road"
-        />
+        <!-- Foto 7 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria7.jpeg" alt="The Beatles" />
+          </div>
+        </div>
+
+        <!-- Foto 8 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria8.jpeg" alt="The Beatles" />
+          </div>
+        </div>
+
+        <!-- Foto 9 -->
+        <div class="col-md-4">
+          <div class="foto-galeria hoverzada">
+            <img src="assets/img/galeria9.webp" alt="The Beatles" />
+          </div>
+        </div>
 
       </div>
 
-      <div class="col-md-5">
+    </section>
 
-        <p>
-          <b>Trabalho de Front-end 2</b> - Banda<br />
-
-          Desenvolvido por Enzo Gabriel, Arthur Ribeiro,
-          Gabriel Carrajola, Matheus Bonatti, Levi Lara e
-          Jaderson Andrade.<br />
-
-          Todos os direitos reservados © 2026 - The Beatles
-        </p>
-
-      </div>
-
-      <div class="col-md-5">
-
-        <div class="row">
-
-          <div class="col-md-4">
-
-            <ul class="list-unstyled">
-
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  Início
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="biografia.html">
-                  Biografia
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
+  </main>
 
 
-          <div class="col-md-4">
+  <!-- Início do Footer -->
+  <footer class="footer-beatles">
 
-            <ul class="list-unstyled">
+    <div class="container">
 
-              <li class="nav-item">
-                <a class="nav-link" href="discografia.html">
-                  Discografia
-                </a>
-              </li>
+      <div class="row align-items-center">
 
-              <li class="nav-item">
-                <a class="nav-link" href="curiosidades.html">
-                  Curiosidades
-                </a>
-              </li>
+        <div class="col-md-2">
 
-            </ul>
-
-          </div>
-
-
-          <div class="col-md-4">
-
-            <ul class="list-unstyled">
-
-              <li class="nav-item">
-                <a class="nav-link" href="legado.html">
-                  Legado
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="timeline.html">
-                  Timeline
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">
-                  Galeria
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
+          <img class="img-fluid logo-footer" src="assets/img/beatles-footer-logo-branco.png"
+            alt="Logo Beatles Abbey Road" />
 
         </div>
+
+        <div class="col-md-5">
+
+          <p>
+            <b>Trabalho de Front-end 2</b> - Banda<br />
+
+            Desenvolvido por Enzo Gabriel, Arthur Ribeiro,
+            Gabriel Carrajola, Matheus Bonatti, Levi Lara e
+            Jaderson Andrade.<br />
+
+            Todos os direitos reservados © 2026 - The Beatles
+          </p>
+
+        </div>
+
+        <div class="col-md-5">
+
+          <div class="row">
+
+            <div class="col-md-4">
+
+              <ul class="list-unstyled">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    Início
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="biografia.html">
+                    Biografia
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+              <ul class="list-unstyled">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="discografia.html">
+                    Discografia
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="curiosidades.html">
+                    Curiosidades
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+              <ul class="list-unstyled">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="legado.html">
+                    Legado
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="timeline.html">
+                    Timeline
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">
+                    Galeria
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
-
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Fim do Footer -->
+  <!-- Fim do Footer -->
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-></script>
-```
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
+
 </html>

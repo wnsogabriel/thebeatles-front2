@@ -294,3 +294,35 @@ Espaçamento do texto para o video */
   color: var(--cinza);
   font-size: 0.9rem;
 }
+
+  .galeria-fotos {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .foto-galeria {
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .foto-galeria img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .titulo-galeria {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  .subtitulo-galeria {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+  }
